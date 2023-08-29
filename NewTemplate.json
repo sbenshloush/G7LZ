@@ -320,6 +320,22 @@
             "defaultValue": "",
             "type": "String"
         },
+        "subnetMaskForGw": {
+            "defaultValue": "",
+            "type": "String"
+        },
+		 "subnetMaskForAzureGw": {
+            "defaultValue": "",
+            "type": "String"
+        },
+		 "subnetMaskForDevops": {
+            "defaultValue": "",
+            "type": "String"
+        },
+		 "subnetMaskForCI-CD": {
+            "defaultValue": "",
+            "type": "String"
+        },
         "enableErGw": {
             "defaultValue": "No",
             "allowedValues": [
@@ -1932,6 +1948,15 @@
                     },
                     "subnetMaskForGw": {
                         "value": "[parameters('subnetMaskForGw')]"
+                    },
+                    "subnetMaskForAzureGw": {
+                        "value": "[parameters('subnetMaskForAzureGw')]"
+                    },
+                    "subnetMaskForDevops": {
+                        "value": "[parameters('subnetMaskForDevops')]"
+                    },
+                    "subnetMaskForCI-CD": {
+                        "value": "[parameters('subnetMaskForCI-CDw')]"
                     },
                     "firewallSku": {
                         "value": "[parameters('firewallSku')]"
@@ -3682,6 +3707,15 @@
                     },
                     "subnetMaskForGw": {
                         "value": "[parameters('subnetMaskForGw')]"
+                    },
+                    "subnetMaskForAzureGw": {
+                        "value": "[parameters('subnetMaskForAzureGw')]"
+                    },
+                    "subnetMaskForDevops": {
+                        "value": "[parameters('subnetMaskForDevops')]"
+                    },
+                    "subnetMaskForCI-CD": {
+                        "value": "[parameters('subnetMaskForCI-CD')]"
                     },
                     "firewallSku": {
                         "value": "[parameters('firewallSku')]"
